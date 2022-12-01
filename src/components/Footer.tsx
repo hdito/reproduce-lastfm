@@ -2,11 +2,11 @@ import { footerContent, languages } from "../content/footerContent";
 
 export const Footer = () => {
   return (
-    <footer className="bg-lastfm-obsidian text-white text-sm">
-      <div className="px-4 py-8 grid grid-cols-2 lg:grid-cols-5 gap-4 border-b border-lastfm-mineshaft">
+    <footer className="bg-lastfm-obsidian text-sm text-white">
+      <div className="grid grid-cols-2 gap-4 border-b border-lastfm-mineshaft px-4 py-8 lg:grid-cols-5">
         {footerContent.map((block) => (
           <div className="space-y-1">
-            <h3 className="uppercase text-lastfm-graphite font-bold text-xs">
+            <h3 className="text-xs font-bold uppercase text-lastfm-graphite">
               {block.title}
             </h3>
             {block.content.map((link) => (
@@ -18,7 +18,7 @@ export const Footer = () => {
         ))}
       </div>
       <div className="px-4 py-6">
-        <div className="flex gap-2 flex-wrap text-lastfm-graphite mb-4">
+        <div className="mb-4 flex flex-wrap gap-2 text-lastfm-graphite">
           {languages.map((language, index) => (
             <a {...(index === 0 ? { className: "text-white" } : {})} href="#">
               {language}

@@ -5,14 +5,14 @@ import Logo from "/public/logoLastFm.png";
 
 export const Header = () => {
   return (
-    <header className="px-4 relative flex gap-4 h-12 bg-black text-white items-center text-2xl">
-      <button>
+    <header className="relative flex h-12 items-center gap-4 bg-black px-4 text-2xl text-white">
+      <button className="lg:hidden">
         <HiMenu />
       </button>
-      <button>
+      <button className="lg:hidden">
         <IoPersonCircle />
       </button>
-      <div className="p-3 absolute h-full  left-1/2 -translate-x-1/2">
+      <div className="absolute left-1/2 h-full -translate-x-1/2 p-3">
         <img className="block" src={Logo} alt="Las.fm logo" />
       </div>
       <button className="ml-auto">

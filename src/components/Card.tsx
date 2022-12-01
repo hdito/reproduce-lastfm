@@ -5,10 +5,10 @@ import { CardsInfo } from "./CardInfo";
 
 export const Card = ({ cardInfo }: { cardInfo: cardInfo }) => {
   return (
-    <div className="p-4 bg-lastfm-platinum border-y border-lunar flex gap-4">
-      <div className="h-20 w-20 relative">
+    <div className="border-lunar flex gap-4 border-y bg-lastfm-platinum p-4">
+      <div className="relative h-20 w-20">
         <img
-          className="block object-cover object-center h-full"
+          className="block h-full object-cover object-center"
           src={cardInfo.image.src}
           alt={cardInfo.image.alt}
         />

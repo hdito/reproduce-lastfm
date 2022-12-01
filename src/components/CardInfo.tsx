@@ -12,21 +12,21 @@ export const CardsInfo = ({
           <>
             Similar to{" "}
             <a
-              className="hover:underline text-lastfm-navy"
+              className="text-lastfm-navy hover:underline"
               href={info.similar[0].src}
             >
               {info.similar[0].title}
             </a>
             {", "}
             <a
-              className="hover:underline text-lastfm-navy"
+              className="text-lastfm-navy hover:underline"
               href={info.similar[1].src}
             >
               {info.similar[1].title}
             </a>
             {" and "}
             <a
-              className="hover:underline text-lastfm-navy"
+              className="text-lastfm-navy hover:underline"
               href={info.similar[2].src}
             >
               {info.similar[2].title}
@@ -38,7 +38,7 @@ export const CardsInfo = ({
           <>
             You've scrobbled{" "}
             <a
-              className="hover:underline text-lastfm-navy"
+              className="text-lastfm-navy hover:underline"
               href={info.band.src}
             >
               {info.band.title}
