@@ -66,7 +66,7 @@ export const Header = () => {
           <input
             className="flex-1 bg-transparent px-4 py-1 text-base focus:outline-0"
             placeholder="Search for music..."
-            type="search"
+            type="text"
           />
           <button
             className="hidden lg:block"
@@ -74,7 +74,7 @@ export const Header = () => {
           >
             <IoClose />
           </button>
-          <button className="h-full bg-red-700 px-4">
+          <button className="h-full px-4 py-3 lg:bg-red-700">
             <FiSearch />
           </button>
         </form>
