@@ -39,13 +39,19 @@ export const Header = () => {
         <IoPersonCircle />
       </a>
       {isOpenSearch ? (
-        <form className="absolute bottom-0 right-0 left-0 z-10 flex translate-y-full items-center gap-4 border-t border-lastfm-mineshaft bg-black">
+        <form className="absolute bottom-0 right-0 left-0 z-10 flex translate-y-full items-center gap-4 border-t border-lastfm-mineshaft bg-black lg:top-0 lg:translate-y-0 lg:border-t-0">
           <input
             className="flex-1 bg-transparent px-4 py-1 text-base focus:outline-0"
             placeholder="Search for music..."
             type="search"
           />
-          <button className="p-4">
+          <button
+            className="hidden lg:block"
+            onClick={() => setIsOpenSearch(false)}
+          >
+            <IoClose />
+          </button>
+          <button className="h-full bg-red-700 px-4">
             <FiSearch />
           </button>
         </form>
