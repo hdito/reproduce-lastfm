@@ -4,6 +4,7 @@ import { Cards } from "./components/Cards";
 import { Events } from "./components/Events";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Main } from "./components/Main";
 import { Tabs } from "./components/Tabs";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="min-h-screen font-barlow text-lastfm-mineshaft">
       <Header />
       <Tabs />
-      <Cards />
+      <Main />
       <Events />
       <Footer />
     </div>

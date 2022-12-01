@@ -3,7 +3,7 @@ import { IoMusicalNotes, IoStar } from "react-icons/io5";
 import { RiAlbumFill } from "react-icons/ri";
 
 const icon = cva(
-  "absolute right-0 bottom-0 translate-x-2 translate-y-2 rounded-full text-white p-1.5 text-xl",
+  "absolute right-0 bottom-0 translate-x-2 lg:right-4 translate-y-2 lg:translate-x-0 lg:translate-y-1/2 rounded-full text-white p-1.5 text-xl",
   {
     variants: {
       type: {

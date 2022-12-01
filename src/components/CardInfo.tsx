@@ -7,7 +7,7 @@ export const CardsInfo = ({
 }) => {
   return (
     <>
-      <p className="text-gray-700">
+      <p className="pt-2 text-gray-700 lg:p-4">
         {"similar" in info ? (
           <>
             Similar to{" "}

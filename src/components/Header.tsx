@@ -1,6 +1,7 @@
 import { FiSearch } from "react-icons/fi";
 import { HiMenu } from "react-icons/hi";
 import { IoPersonCircle } from "react-icons/io5";
+import { headerContent } from "../content/headerContent";
 import Logo from "/public/logoLastFm.png";
 
 export const Header = () => {
@@ -9,15 +10,26 @@ export const Header = () => {
       <button className="lg:hidden">
         <HiMenu />
       </button>
-      <button className="lg:hidden">
+      <a href="#" className="lg:hidden">
         <IoPersonCircle />
-      </button>
+      </a>
       <div className="absolute left-1/2 h-full -translate-x-1/2 p-3">
         <img className="block" src={Logo} alt="Las.fm logo" />
       </div>
       <button className="ml-auto">
         <FiSearch />
       </button>
+      {headerContent.map((link) => (
+        <a
+          className="hidden text-sm opacity-80 hover:opacity-100 lg:inline-block"
+          href="#"
+        >
+          {link}
+        </a>
+      ))}
+      <a href="#" className="hidden text-3xl lg:inline-block">
+        <IoPersonCircle />
+      </a>
     </header>
   );
 };
